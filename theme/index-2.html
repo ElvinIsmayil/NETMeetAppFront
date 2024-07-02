@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
 <html lang="en">
   <head>
     <!-- ** Basic Page Needs ** -->
     <meta charset="utf-8" />
-    <title>Promodise - Startup Business Bootstrap Template</title>
+    <title>NET Meeting</title>
 
     <!-- ** Mobile Specific Metas ** -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -63,18 +56,14 @@
             <i class="fa fa-bars"></i>
           </span>
         </button>
-
+  
         <div class="collapse navbar-collapse justify-content-end" id="mainNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link smoth-scroll" href="index-2.html">Home</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link smoth-scroll" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="service.html">Service</a>
             </li>
             <li class="nav-item">
               <a class="nav-link smoth-scroll" href="pricing.html">Pricing</a>
@@ -86,16 +75,16 @@
               <a class="nav-link smoth-scroll" href="contact.html">Contact</a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link smoth-scroll" href="profile.html"
-                ><i class="fa-solid fa-user"></i
-              ></a>
+              <a class="nav-link smoth-scroll" href="profile.html">
+                <i class="fa-solid fa-user"></i>
+              </a>
             </li>
             <style>
               .custom-large-margin {
                 margin-right: 1rem; /* Adjust the size as needed */
               }
             </style>
-
+  
             <li class="nav-item me-3">
               <a class="nav-link smoth-scroll" href="chat.html">
                 <i class="fa-solid fa-right-to-bracket custom-large-margin"></i>
@@ -106,11 +95,9 @@
         </div>
       </div>
     </nav>
-
-    <!--MAIN HEADER AREA END -->
-
-    <!--MAIN BANNER AREA -->
-    <div class="banner-area banner-2">
+  
+    <!-- MAIN BANNER AREA -->
+    <div class="banner-area banner-2" ">
       <div class="d-table">
         <div class="d-table-cell">
           <div class="container">
@@ -121,14 +108,8 @@
                   <h1 class="banner-title">
                     Elevate Your Meetings with Our Innovative App
                   </h1>
-                  <p>
-                    We provide a comprehensive meeting solution with real-time
-                    communication, collaborative tools, secure messaging,
-                    interactive whiteboards, and easy meeting scheduling.
-                  </p>
-                  <a href="contact.html" class="btn btn-white btn-circled"
-                    >lets start</a
-                  >
+                  <div id="typed-slogan" style="font-size: 30px; color:white; margin-top: 50px; white-space: nowrap; height: 40px; overflow: hidden;"></div>
+                  <a href="contact.html" class="btn btn-white btn-circled" style="margin-top: 20px;">let's start</a>
                 </div>
               </div>
             </div>
@@ -136,6 +117,27 @@
         </div>
       </div>
     </div>
+    
+    <!-- Typed.js script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        new Typed('#typed-slogan', {
+          strings: ["Simplifying Meetings, Amplifying Results"],
+          typeSpeed: 50,
+          startDelay: 500,
+          backSpeed: 25,
+          backDelay: 5000,
+          loop: true,
+          showCursor: false
+        });
+      });
+    </script>
+    
+    
+    
+    <!-- main script -->
+    <script src="js/script.js"></script>
+  
     <!--MAIN HEADER AREA END -->
     <!--  ABOUT AREA START  -->
     <section id="intro" class="section-padding">
@@ -283,12 +285,10 @@
           <div class="col-lg-12 col-sm-12 m-auto">
             <div class="section-heading text-white">
               <h4 class="section-title">
-                Full stack digital marketing solution
+                Comprehensive Virtual Meeting Solutions for Students and Tutors
               </h4>
               <p>
-                We’re full service which means we’ve got you covered on design &
-                content right through to digital. You’ll form a lasting
-                relationship with us.
+                Our platform offers a suite of features designed to enhance the virtual learning experience, providing students and tutors with the best tools for effective and engaging online education.
               </p>
             </div>
           </div>
@@ -296,7 +296,7 @@
       </div>
     </section>
     <!--  SERVICE PARTNER END  -->
-
+    
     <!--  SERVICE AREA START  -->
     <section id="service">
       <div class="container">
@@ -311,10 +311,9 @@
                 />
               </div>
               <div class="service-inner">
-                <h4>Video Marketing</h4>
+                <h4>Homework System</h4>
                 <p>
-                  Reach a huge area of users and get a publicty of your product
-                  and service ,<span>video marketing</span> solution.
+                  Our integrated <span>homework system</span> allows tutors to assign, track, and grade homework efficiently, ensuring students stay on top of their studies.
                 </p>
               </div>
             </div>
@@ -329,11 +328,9 @@
                 />
               </div>
               <div class="service-inner">
-                <h4>Email Marketing</h4>
+                <h4>Chat System</h4>
                 <p>
-                  Email Marketing is a great solution to reach a
-                  <span>high range of customers</span> eagrerly waiting to get a
-                  service.
+                  Our <span>real-time chat system</span> facilitates seamless communication between students and tutors, making it easy to ask questions, share resources, and collaborate.
                 </p>
               </div>
             </div>
@@ -348,15 +345,14 @@
                 />
               </div>
               <div class="service-inner">
-                <h4>SEO optimization</h4>
+                <h4>Virtual Classrooms</h4>
                 <p>
-                  we provide wide range of<span> seo service</span> to make your
-                  site at top to reach your target customers provided.
+                  Our <span>virtual classrooms</span> provide an interactive and engaging environment for online learning, complete with whiteboards, screen sharing, and breakout rooms.
                 </p>
               </div>
             </div>
           </div>
-
+    
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="service-box">
               <div class="service-img-icon">
@@ -367,10 +363,9 @@
                 />
               </div>
               <div class="service-inner">
-                <h4>Custom Website</h4>
+                <h4>Secure Messaging</h4>
                 <p>
-                  We provide <span>custom website</span> for any small and large
-                  company web based service in large compact package.
+                  Our platform ensures <span>secure messaging</span> between students and tutors, keeping your communications private and safe.
                 </p>
               </div>
             </div>
@@ -385,11 +380,9 @@
                 />
               </div>
               <div class="service-inner">
-                <h4>Content Growth</h4>
+                <h4>Easy Scheduling</h4>
                 <p>
-                  Content is king,Having a blog site and want to
-                  <span>build content</span> make a platform of earning too we
-                  assist you.
+                  Our <span>easy scheduling</span> feature helps tutors and students manage their appointments effortlessly, with calendar integration and automated reminders.
                 </p>
               </div>
             </div>
@@ -404,10 +397,9 @@
                 />
               </div>
               <div class="service-inner">
-                <h4>Link Building</h4>
+                <h4>Performance Analytics</h4>
                 <p>
-                  Want to grow your <span>potential visitor</span> your site to
-                  make it more effective and succesful business .
+                  Our platform provides <span>performance analytics</span> to help tutors track student progress and adjust their teaching strategies accordingly.
                 </p>
               </div>
             </div>
@@ -415,6 +407,7 @@
         </div>
       </div>
     </section>
+    
     <!--  SERVICE AREA END  -->
     <!-- PRICE AREA START  -->
     <section id="pricing" class="section-padding bg-main">
@@ -634,42 +627,7 @@
       </div>
     </section>
     <!--  TESTIMONIAL AREA END  -->
-    <!--  PARTNER START  -->
-    <section class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img
-              src="images/clients/client01.png"
-              alt="partner"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img
-              src="images/clients/client06.png"
-              alt="partner"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img
-              src="images/clients/client04.png"
-              alt="partner"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img
-              src="images/clients/client05.png"
-              alt="partner"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--  PARTNER END  -->
+    
     <!--  COUNTER AREA START  -->
     <section id="counter" class="section-padding">
       <div class="overlay dark-overlay"></div>
@@ -784,14 +742,11 @@
           <div class="col-lg-4">
             <div class="footer-widget footer-link">
               <h4>
-                We concern about you<br />
-                to grow business rapidly.
+                Our goal is to enhance<br />
+                virtual education
               </h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-                ipsam hic non sunt recusandae atque unde saepe nihil earum
-                voluptatibus aliquid optio suscipit nobis quia vel quod, iure
-                quae.
+                We strive to create an engaging and interactive learning environment that bridges the gap between students and educators. By leveraging cutting-edge technology, we aim to make online education more accessible, effective, and enjoyable for everyone involved.
               </p>
             </div>
           </div>
@@ -800,10 +755,8 @@
               <h4>About</h4>
               <ul>
                 <li><a href="about.html">About</a></li>
-                <li><a href="service.html">Service</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="#!">Team</a></li>
-                <li><a href="#!">Testimonials</a></li>
+                <li><a href="about.html">Team</a></li>
                 <li><a href="blog.html">Blog</a></li>
               </ul>
             </div>
@@ -815,21 +768,18 @@
               <ul>
                 <li><a href="#!">How it Works</a></li>
                 <li><a href="#!">Support</a></li>
-                <li><a href="#!">Privacy Policy</a></li>
-                <li><a href="#!">Report Bug</a></li>
-                <li><a href="#!">License</a></li>
-                <li><a href="#!">Terms & Condition</a></li>
+                <li><a href="terms.html">Terms & Condition</a></li>
+                <li><a href="faq.html">FAQ</a></li>
               </ul>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-12">
             <div class="footer-widget footer-text">
               <h4>Our location</h4>
-              <p class="mail"><span>Mail:</span> promdise@gmail.com</p>
-              <p><span>Phone :</span>+202-277-3894</p>
+              <p class="mail"><span>Mail:</span>teymursuleymanli2008@gmail.com/p>
+              <p><span>Phone :</span>+994 995 45 05 05</p>
               <p>
-                <span>Location:</span> 455 West Orchard Street Kings Mountain,
-                NC 28086,NOC building
+                <span>Location:</span> 241 Abbas Mirza Sharifzadeh St
               </p>
             </div>
           </div>
@@ -837,8 +787,8 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="footer-copy">
-              Copyright &copy; 2021, Designed &amp; Developed by
-              <a href="https://themefisher.com/">Themefisher</a>
+              Copyright &copy; 2024, Designed &amp; Developed by
+              <a>Elvin Ismayil</a>
             </div>
           </div>
         </div>
@@ -854,7 +804,7 @@
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap css -->
     <script src="plugins/bootstrap/bootstrap.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
     <script src="plugins/google-map/map.js"></script>
