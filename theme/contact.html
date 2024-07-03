@@ -27,6 +27,70 @@
 
     <!--Favicon-->
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Animation Styles -->
+    <style>
+      /* General Animation */
+      .fade-in {
+        animation: fadeIn 1s ease-in forwards;
+        opacity: 0;
+      }
+      .slide-in-left {
+        animation: slideInLeft 1s ease-out forwards;
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      .slide-in-right {
+        animation: slideInRight 1s ease-out forwards;
+        transform: translateX(100%);
+        opacity: 0;
+      }
+
+      /* Keyframes */
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideInLeft {
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slideInRight {
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      /* Navbar transition */
+      .navbar {
+        transition: background-color 0.5s ease;
+      }
+      .navbar.scrolled {
+        background-color: #333;
+      }
+
+      /* Form transition */
+      .form-group {
+        transition: transform 0.3s, opacity 0.3s;
+      }
+      .form-group:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+
+      /* Footer transition */
+      .footer-widget {
+        transition: transform 0.5s, opacity 0.5s;
+      }
+      .footer-widget:hover {
+        transform: translateY(-10px);
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
     <!--MAIN HEADER AREA END -->
@@ -52,26 +116,25 @@
         <div class="collapse navbar-collapse justify-content-end" id="mainNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="index-2.html">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="about.html">About</a>
+              <a class="nav-link smoth-scroll fade-in" href="index-2.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="service.html">Service</a>
+              <a class="nav-link smoth-scroll fade-in" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="pricing.html">Pricing</a>
+              <a class="nav-link smoth-scroll fade-in" href="service.html">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="blog.html">Blog</a>
+              <a class="nav-link smoth-scroll fade-in" href="pricing.html">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-scroll" href="contact.html">Contact</a>
+              <a class="nav-link smoth-scroll fade-in" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smoth-scroll fade-in" href="contact.html">Contact</a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link smoth-scroll" href="profile.html"
+              <a class="nav-link smoth-scroll fade-in" href="profile.html"
                 ><i class="fa-solid fa-user"></i
               ></a>
             </li>
@@ -82,7 +145,7 @@
             </style>
 
             <li class="nav-item me-3">
-              <a class="nav-link smoth-scroll" href="chat.html">
+              <a class="nav-link smoth-scroll fade-in" href="chat.html">
                 <i class="fa-solid fa-right-to-bracket custom-large-margin"></i>
                 Log In
               </a>
@@ -98,11 +161,10 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
-            <div class="banner-content content-padding">
+            <div class="banner-content content-padding slide-in-left">
               <h1 class="text-white">Let's Connect with us</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde,
-                perferendis?
+                In case you need any support or if you have inquiries let us know!
               </p>
             </div>
           </div>
@@ -115,7 +177,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-sm-12 col-md-12">
-            <div class="mb-5">
+            <div class="mb-5 slide-in-right">
               <h2 class="mb-2">Get in touch</h2>
               <p>
                 We'd love to hear from you! Whether you have questions about our
@@ -177,7 +239,7 @@
                 </button>
               </form>
             </div>
-            <div class="col-lg-3 my-auto mx-auto mx-2">
+            <div class="col-lg-3 my-auto mx-auto mx-2 slide-in-left">
               <h3>Office Address</h3>
               <p style="font-size: 24px" class="mb-3">
                 241 Abbas Mirza Sharifzadeh St
@@ -195,7 +257,7 @@
         <br />
 
         <!-- Google Map -->
-        <div class="map-container">
+        <div class="map-container slide-in-right">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3031.9499369257897!2d49.8008194!3d40.3992577!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d2d4a8ae5d3%3A0x7037bfc3b8d3d4b3!2s40%C2%B023'57.3%22N%2049%C2%B048'03.0%22E!5e0!3m2!1sen!2sus!4v1620853707751!5m2!1sen!2sus"
             style="border: 0"
@@ -211,7 +273,7 @@
       <div class="container">
         <div class="row justify-content-around">
           <div class="col-lg-4">
-            <div class="footer-widget footer-link">
+            <div class="footer-widget footer-link fade-in">
               <h4>
                 We concern about you<br />
                 to grow business rapidly.
@@ -225,7 +287,7 @@
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-6">
-            <div class="footer-widget footer-link">
+            <div class="footer-widget footer-link fade-in">
               <h4>About</h4>
               <ul>
                 <li><a href="about.html">About</a></li>
@@ -239,7 +301,7 @@
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <div class="footer-widget footer-link">
+            <div class="footer-widget footer-link fade-in">
               <h4>Quick Links</h4>
               <ul>
                 <li><a href="#!">How it Works</a></li>
@@ -252,7 +314,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="footer-widget footer-text">
+            <div class="footer-widget footer-text fade-in">
               <h4>Our location</h4>
               <p class="mail"><span>Mail:</span> promdise@gmail.com</p>
               <p><span>Phone :</span>+202-277-3894</p>
@@ -288,5 +350,13 @@
     <script src="plugins/bootstrap/bootstrap.min.js"></script>
     <!-- Main script -->
     <script src="js/script.js"></script>
+
+    <!-- Navbar scroll effect -->
+    <script>
+      $(document).scroll(function () {
+        var $nav = $(".navbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    </script>
   </body>
 </html>
